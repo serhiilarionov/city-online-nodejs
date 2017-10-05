@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!-- xLander - Premium Flexible Landing Page Template design by DSA79 (http://www.dsathemes.com) -->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" ng-app="App" ng-controller="Ctrl"> <!--<![endif]-->
+	<head>
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<title translate="title">Диспетчерська система "Сіті-Онлайн"</title>
+		<meta name="author" content="DSA79">
+		<meta name="keywords" content="responsive, premium template, html5 template, one page, landing page, business, corporate, project">
+		<meta name="description" content="xLander - Premium Flexible Landing Page Template">
+		<!-- Mobile Specific Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Libs CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="css/flexslider.css" rel="stylesheet">
+		<link href="css/prettyPhoto.css" rel="stylesheet">
+		<link href="css/owl.carousel.css" rel="stylesheet">
+
+		<!-- Template CSS -->
+		<link href="less/green.css" rel="stylesheet">
+		<!-- Responsive CSS -->
+		<link href="css/responsive.css" rel="stylesheet">
+
+		<!-- On Scroll Animations -->
+		<link href="css/animate.css" rel="stylesheet">
+
+		<link href="css/my_animate.css" rel="stylesheet">
+								
+		<!-- Favicons -->	
+		<link rel="shortcut icon" href="img/icons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+			
+		<!-- Google Fonts -->	
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,800italic,800,700italic,700,600italic,600,400italic,300&subset=latin,cyrillic'' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arimo&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!-- PRELOADER
+		============================================= -->		
+		<div class="animationload">
+			<div class="loader"></div>
+		</div>
+		<!-- HEADER
+		============================================= -->
+		<header id="header">		
+			<div class="navbar navbar-fixed-top">
+				<a class="GoToMap navbar-brand" href="#intro"><img src="img/logo_mini.png" alt="logo" role="banner" height="60px"></a>
+				<div>
+					<a class="GoToMap" href="#promo_line"><button class="submit_application menu_button"  type="submit" translate="submit_application">Подати заявку</button></a>
+				</div>
+				<div class="container">
+					<!-- Navigation Bar -->
+					<div class="navbar-header">
+						<!-- Responsive Menu Button -->
+						<button type="button" id="nav-toggle" class="navbar-toggle " data-toggle="collapse" data-target="#navigation-menu">
+							<span class="sr-only">Toggle navigation</span> 
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<!-- End Navigation Bar -->
+					<!-- Navigation Menu -->
+					<nav id="navigation-menu" class="collapse navbar-collapse" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+							<li id="nav_button"  class="navigation-buttons invisible "><a class="GoToMap" href="#promo_line"><button  class="submit_application"  type="submit" translate="submit_application">Подати заявку</button></a></li>
+							<li><a id="GoToHome" class="selected-nav" href="#intro" pop="menu.intro" translate="menu.intro">Початок</a></li>
+							<li><a id="GoToAbout" href="#about" translate="menu.about">Про сервіс</a></li>
+							<li><a id="GoToFeatures" href="#statistics" translate="menu.statistics">Статистика</a></li>
+							<li><a id="GoToWorks" href="#functions" translate="menu.functions">Функції</a></li>
+							<li class="langs">
+								<img ng-click="set_lang('en');" onclick="lang_animated();" src="img/lang/en.png" title="English" />
+								<img ng-click="set_lang('ru')" onclick="lang_animated();" src="img/lang/ru.png" title="Русский" />
+								<img ng-click="set_lang('ua');" onclick="lang_animated();" src="img/lang/ua.png" title="Українська" />
+							</li>
+						</ul>
+					</nav>  <!-- End Navigation Menu -->
+				</div>	 <!-- End container -->
+			</div>	  <!-- End navbar fixed top  -->		
+		</header>	<!-- END HEADER -->
+		
+		<!-- CONTENT WRAPPER
+		============================================= -->	
+		<div id="content_wrapper">
+			<!-- INTRO
+			============================================= -->
+			<section id="intro">
+				<div class="overlay">
+					<div class="container">		
+						<div id="intro_content" class="row">
+
+							<div id="newsletter-top" class="col-md-12 text-center">
+								<img src="img/logo.png" alt="logo" role="banner" height="250%">
+								<!-- INTRO TEXT -->
+								<div class="intro_text">
+								
+									<h2 translate="intro.title">Об'єднана національна диспетчерська система</h2>
+									<div class="row" align="center">
+										<ul class="portfolio-items-list" style="width: 80%">
+											<!-- IMAGE #1 -->
+											<li class="col-xs-6 col-sm-4 col-md-3 portfolio-item illustration web" data-cat="2">
+												<div class="hover-overlay">
+													<!-- Image Link -->
+													<img class="img-responsive" src="img/services/1.svg" alt="Portfolio Image">
+													<!-- Image Zoom -->
+													<a class="prettyPhoto image_zoom" href="" title="Portfolio Image">
+														<div class="item-overlay">
+															<div class="overlay-content">
+																<h4>Enter Title Here</h4>
+																<h5>Project Category</h5>
+															</div>
+														</div>
+													</a>
+												</div>
+											</li>	<!-- END IMAGE #1 -->
+
+											<!-- IMAGE #2 -->
+											<li class="col-xs-6 col-sm-4 col-md-3 portfolio-item digital_art illustration" data-cat="3">
+												<div class="hover-overlay">
+													<!-- Image Link -->
+													<img class="img-responsive" src="img/services/2.svg" alt="Portfolio Image">
+													<!-- Image Zoom -->
+													<a class="prettyPhoto image_zoom" href="" title="Portfolio Image">
+														<div class="item-overlay">
+															<div class="overlay-content">
+																<h4>Enter Title Here</h4>
+																<h5>Project Category</h5>
+															</div>
+														</div>
+													</a>
+												</div>
+											</li>	<!-- END IMAGE #2 -->
+											<!-- IMAGE #3 -->
+											<li class="col-xs-6 col-sm-4 col-md-3 portfolio-item graphic_design digital_art" data-cat="4">
+												<div class="hover-overlay">
+													<!-- Image Link -->
+													<img class="img-responsive" src="img/services/3.svg" alt="Portfolio Image">
+													<!-- Image Zoom -->
+													<a class="prettyPhoto image_zoom" href="" title="Portfolio Image">
+														<div class="item-overlay">
+															<div class="overlay-content">
+																<h4>Enter Title Here</h4>
+																<h5>Project Category</h5>
+															</div>
+														</div>
+													</a>
+												</div>
+											</li>	<!-- END IMAGE #3 -->
+											<!-- IMAGE #4 -->
+											<li class="col-xs-6 col-sm-4 col-md-3 portfolio-item illustration graphic_design" data-cat="2">
+												<div class="hover-overlay">
+													<!-- Image Link -->
+													<img class="img-responsive" src="img/services/4.svg" alt="Portfolio Image">
+													<!-- Image Zoom -->
+													<a class="prettyPhoto image_zoom" href="" title="Portfolio Image">
+														<div class="item-overlay">
+															<div class="overlay-content">
+																<h4>Enter Title Here</h4>
+																<h5>Project Category</h5>
+															</div>
+														</div>
+													</a>
+												</div>
+											</li>	<!-- END IMAGE #4 -->
+
+											<!-- IMAGE #5 -->
+											<li class="col-xs-6 col-sm-4 col-md-3 portfolio-item web illustration" data-cat="5">
+												<div class="hover-overlay">
+													<!-- Image Link -->
+													<img class="img-responsive" src="img/services/5.svg" alt="Portfolio Image">
+													<!-- Image Zoom -->
+													<a class="prettyPhoto image_zoom" href="" title="Portfolio Image">
+														<div class="item-overlay">
+															<div class="overlay-content">
+																<h4>Enter Title Here</h4>
+																<h5>Project Category</h5>
+															</div>
+														</div>
+													</a>
+												</div>
+											</li>	<!-- END IMAGE #5 -->
+
+											<!-- IMAGE #6 -->
+											<li class="col-xs-6 col-sm-4 col-md-3 portfolio-item digital_art web" data-cat="3">
+												<div class="hover-overlay">
+													<!-- Image Link -->
+													<img class="img-responsive" src="img/services/6.svg" alt="Portfolio Image">
+													<!-- Image Zoom -->
+													<a class="prettyPhoto image_zoom" href="" title="Portfolio Image">
+														<div class="item-overlay">
+															<div class="overlay-content">
+																<h4>Enter Title Here</h4>
+																<h5>Project Category</h5>
+															</div>
+														</div>
+													</a>
+												</div>
+											</li>	<!-- END IMAGE #7 -->
+											<!-- IMAGE #6 -->
+											<li class="col-xs-6 col-sm-4 col-md-3 portfolio-item digital_art web" data-cat="3">
+												<div class="hover-overlay">
+													<!-- Image Link -->
+													<img class="img-responsive" src="img/services/7.svg" alt="Portfolio Image">
+													<!-- Image Zoom -->
+													<a class="prettyPhoto image_zoom" href="" title="Portfolio Image">
+														<div class="item-overlay">
+															<div class="overlay-content">
+																<h4>Enter Title Here</h4>
+																<h5>Project Category</h5>
+															</div>
+														</div>
+													</a>
+												</div>
+											</li>	<!-- END IMAGE #8 -->
+											<!-- IMAGE #6 -->
+											<li class="col-xs-6 col-sm-4 col-md-3 portfolio-item digital_art web" data-cat="3">
+												<div class="hover-overlay">
+													<!-- Image Link -->
+													<img class="img-responsive" src="img/services/8.svg" alt="Portfolio Image">
+													<!-- Image Zoom -->
+													<a class="prettyPhoto image_zoom" href="" title="Portfolio Image">
+														<div class="item-overlay">
+															<div class="overlay-content">
+																<h4>Enter Title Here</h4>
+																<h5>Project Category</h5>
+															</div>
+														</div>
+													</a>
+												</div>
+											</li>	<!-- END IMAGE #6 -->
+										</ul>
+									</div>
+								</div>	<!-- END TEXT -->
+
+								
+								<!-- NEWSLETTER FORM -->
+
+								<a class="GoToMap" href="#promo_line"><button id="intro_submit" class="submit_application"  type="submit" translate="submit_application">Подати заявку</button></a>
+
+
+								<!-- Newsletter Form Message -->	
+								<div class="message"></div>
+										
+							</div>	<!-- END NEWSLETTER FORM-->
+																
+						</div>	 <!-- End Intro Content -->
+
+					</div>    <!-- End container -->
+				</div>	   <!-- End overlay-->
+
+			</section>	<!-- END INTRO -->
+			<!-- ABOUT
+			============================================= -->
+			<section id="about">
+				<div class="container">
+					<!-- SECTION TITLE -->			
+					<div class="row">
+						<div class="col-sm-12 titlebar">
+							<h3 translate="about.title">Про сервіс</h3>
+							<h2 translate="about.big_title">Диспетчерська система "Сіті-Онлайн"</h2>
+						</div>
+					</div>
+					<!-- TABS HOLDER -->	
+					<div id="tabs-holder" class="row">
+						<!-- TABS -->
+						<div class="col-md-12">
+							<!-- Nav Tabs -->
+							<ul class="nav nav-tabs ul_center " role="tablist">
+								<li class="active animated" data-animation="bounceIn" data-animation-delay="300"><a href="#tab_1" role="tab" data-toggle="tab" translate="about.for_residents">Для мешканців міст</a></li>
+								<li class=" animated" data-animation="bounceIn" data-animation-delay="400"><a href="#tab_2"  role="tab" data-toggle="tab" translate="about.for_utilcompanies">Для комунальних підприємств</a></li>
+								</ul>
+							<!-- Tab Panes -->
+							<div class="tab-content">
+								<!-- TAB #1 -->
+								<div id="tab_1" class="tab-pane active" >
+									<!-- Tab #1 Description -->
+                                    <div class="disanimated col-md-6 animated" data-animation="bounceInLeft" data-animation-delay="300">
+										<h4 translate="about.for_residents_li1_title">Донесемо проблему безпосереднього виконавця якщо:</h4>
+										<p>
+											<ol>
+												<li translate="about.for_residents_li1_1">У будинку протікають труби або дах, проблеми з газом, немає опалення або гарячої води, забита каналізація тощо</li>
+												<li translate="about.for_residents_li1_2">На дорозі біля будинку або роботи ями та вибоїни</li>
+												<li translate="about.for_residents_li1_3">У дворі немає вуличного освітлення</li>
+												<li translate="about.for_residents_li1_4">Біля дому сухе аварійне дерево яке потрібно терміного спилити</li>
+												<li translate="about.for_residents_li1_5">Не прибрано у під’їзді або у дворі</li>
+												<li translate="about.for_residents_li1_6">Ви маєте скаргу або пропозицію до органів влади</li>
+											</ol>
+										</p>
+									</div>
+									<div  class="disanimated col-md-6 animated " data-animation="bounceInRight" data-animation-delay="300">
+										<h4 translate="about.for_residents_li2_title">Довірте нам свою проблему!</h4>
+										<p>
+                                            <ol>
+                                                <li translate="about.for_residents_li2_1">Ми єдина в Україні об’єднана служба диспетчеризації та обробки звернень</li>
+                                                <li translate="about.for_residents_li2_2">Ми контролюємо виконання заявок</li>
+                                                <li translate="about.for_residents_li2_3">Ми допомагаємо, якщо комунальні служби Вас ігнорують</li>
+                                                <li translate="about.for_residents_li2_4">Ми прискорюємо вирішення питань у комунальних службах</li>
+                                                <li translate="about.for_residents_li2_5">Ми робимо діяльність комунальних служб відкритою</li>
+                                                <li translate="about.for_residents_li2_6">Ми даємо можливість службам оперативно реагувати на проблеми</li>
+                                            </ol>
+										</p>
+									</div>
+								</div>	<!-- END TAB #1 -->
+								<!-- TAB #2 -->
+								<div  id="tab_2" class="tab-pane">
+									<!-- Tab #2 Description -->
+                                    <div  class="disanimated col-md-6 animated " data-animation="bounceInLeft" data-animation-delay="300">
+                                        <h4 translate="about.for_utilcompanies_li1_title">Функціональне призначення системи "Сіті-Онлайн":</h4>
+                                        <p>
+                                        <ol>
+                                            <li translate="about.for_utilcompanies_li1_1">Забезпечення централізованого збору та обробки звернень громадян та суб’єктів господарювання про збої в роботі систем комунального забезпечення, обслуговування громадян та звернень громадян щодо вдосконалення роботи служб міста та благоустрою міста.</li>
+                                            <li translate="about.for_utilcompanies_li1_2">Автоматичне інформування відповідальних виконавців про звернення.</li>
+                                            <li translate="about.for_utilcompanies_li1_3">Прозоре інформування про хід розгляду звернень та виконання робіт автора звернення та зацікавлених осіб.</li>
+                                            <li translate="about.for_utilcompanies_li1_4">Аналітичні та стстистичні звіти про роботу підпримств, бригад тощо.</li>
+                                        </ol>
+                                        </p>
+                                    </div>
+									<div  class="disanimated col-md-6 animated " data-animation="bounceInRight" data-animation-delay="300">
+                                        <h4 translate="about.for_utilcompanies_li2_title">Система може використовуватись:</h4>
+                                        <p>
+                                        <ol>
+                                            <li translate="about.for_utilcompanies_li2_1">Персоналом центрального диспетчерського пункту міста (за наявності).</li>
+                                            <li translate="about.for_utilcompanies_li2_2">Персоналом диспетчерських пунктів підприємств комунального обслуговування.</li>
+                                            <li translate="about.for_utilcompanies_li2_3">Персоналом відповідальних підрозділів виконавчих комітетів міських рад.</li>
+                                            <li translate="about.for_utilcompanies_li2_4">Виконавцями заяков та зверненнь.</li>
+                                            <li translate="about.for_utilcompanies_li2_5">Широким колом мешканців міста та ЗМІ.</li>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                    <!-- Tab #2 Buttons -->
+									<a href="" class="btn btn-theme animated" data-animation="bounceIn" data-animation-delay="300" data-toggle="modal" data-target="#modal" translate="about.order_presentation">Замовити презентацію</a>
+								</div>	<!-- END TAB #2 -->
+							</div>	<!-- End Tab Panes -->
+						</div>	<!-- END TABS -->
+						<!-- TABS HOLDER IMAGE -->
+					</div>	<!-- END TABS HOLDER -->
+				</div>	  <!-- End container -->
+			</section>	<!-- END ABOUT -->
+
+			<section id="statistics">
+			<!-- STATISTIC BANNER
+                        ============================================= -->
+			<div id="statistic_banner">
+				<div class="container">
+					<!-- SECTION TITLE -->
+					<div class="row">
+						<div class="col-sm-12 titlebar">
+							<h3 translate="statistics.title">Деякі факти про нас</h3>
+							<h2 translate="statistics.big_title">Ми пишаємося нашими досягненнями</h2>
+						</div>
+					</div>
+					<!-- STATISTIC HOLDER -->
+					<div id="statistic-holder" class="row">
+						<!-- STATISTIC BLOCK -->
+						<div class="col-xs-3 col-sm-3 col-md-3 statistic-block animated" data-animation="bounceIn" data-animation-delay="300">
+							<div class="statistic-number">5800</div>
+							<div class="statistic-text" translate="statistics.filed_applications">Подано заявок</div>
+						</div>
+						<!-- STATISTIC BLOCK -->
+						<div class="col-xs-3 col-sm-3 col-md-3 statistic-block animated" data-animation="bounceIn" data-animation-delay="400">
+							<div class="statistic-number">5593</div>
+							<div class="statistic-text" translate="statistics.decided_bids">Розв’язано заявок</div>
+						</div>
+						<!-- STATISTIC BLOCK -->
+						<div class="col-xs-3 col-sm-3 col-md-3 statistic-block animated" data-animation="bounceIn" data-animation-delay="500">
+							<div class="statistic-number">22</div>
+							<div class="statistic-text" translate="statistics.applications_performing">Заявок на виконанні</div>
+						</div>
+						<!-- STATISTIC BLOCK -->
+						<div class="col-xs-3 col-sm-3 col-md-3 statistic-block animated" data-animation="bounceIn" data-animation-delay="600">
+							<div class="statistic-number">9</div>
+							<div class="statistic-text" translate="statistics.performance_term">Середній строк виконання(діб)</div>
+						</div>
+					</div>	<!-- END STATISTIC HOLDER -->
+				</div>	<!-- End container -->
+			</div>	<!-- END STATISTIC BANNER -->
+			</section>
+			<!-- FEATURES
+			============================================= -->
+				<div class="container">
+					<!-- FEATURES IMAGE -->
+					<div class="row">																		
+						<div id="services_image" class="col-md-12 text-center">
+							<video autoplay>
+								<source src="./video/screen.mp4" type="video/mp4" > -->
+								<img  src="img/thumbs/2.jpg" class="animated img_side" data-animation="slideInLeft" data-animation-delay="300" alt="services_image" />
+								<img  src="img/thumbs/1.jpg" class="animated img_center" data-animation="slideInUp" data-animation-delay="300"alt="services_image" />
+								<img   src="img/thumbs/2.jpg" class="animated img_side" data-animation="slideInRight" data-animation-delay="300"alt="services_image" />
+							</video>
+						</div>					
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<!-- FEATURES BOX -->
+							<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="300">
+								<h4><i class="fa fa-flask"></i><text translate="features.f1_title">Зручний інтерфейс</text></h4>
+								<p translate="features.f1">Залишити заявку настільки просто, що навіть початківець зможе зробити це за хвилину</p>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+                            <!-- FEATURES BOX -->
+                            <div class="service-box animated" data-animation="fadeInUp" data-animation-delay="500">
+                                <h4><i class="fa fa-tint"></i><text translate="features.f1_title">Доступність</text></h4>
+                                <p translate="features.f2">Система доступна як на персональному комп’ютері, так і на мобільних пристроях</p>
+                            </div>
+						</div>
+					</div>
+				</div>		<!-- End container -->
+				<!-- END FEATURES -->
+
+			<!-- FUNCTIONS
+			============================================= -->
+			<section id="functions">
+				<div class="container">
+					<!-- SECTION TITLE -->				
+					<div class="row">
+						<div class="col-sm-12 titlebar">
+							<h2 translate="functions.big_title">Ключові функції системи "Сіті-Онлайн"</h2>
+						</div>
+					</div>
+					<div class="row">
+						<!-- FEATURE BOX -->
+						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
+							<div class="features-box">
+								<!-- Feature Icon -->
+								<div class="icon-box img-circle">
+									<i class="fa fa-flask"></i>
+								</div>
+								<!-- Feature Box Text -->
+								<div class="features-text">
+									<h4 translate="functions.f1_title">Єдиний пункт приймання заявок</h4>
+									<p translate="functions.f1">Навіть якщо ви не знаєте точно до кого звернутись зі своєю проблемою або питанням, система надішле Ваше звернення безпосередньо виконавцю.</p>
+								</div>
+							</div>
+						</div>	<!-- END FEATURE BOX -->	
+
+						<!-- FEATURE BOX -->
+						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="300">
+							<div class="features-box">
+								<!-- Feature Icon -->
+								<div class="icon-box img-circle">
+									<i class="fa fa-cogs"></i>
+								</div>
+								<!-- Feature Box Text -->
+								<div class="features-text">
+									<h4 translate="functions.f2_title">Перегляд даних заявок на мапі</h4>
+									<p translate="functions.f2">На мапі міста можна переглянути подані заявки та їхні загальні дані.</p>
+								</div>
+							</div>
+						</div>	<!-- END FEATURE BOX -->
+					</div>	<!-- End row -->
+					<div class="row">
+						<!-- FEATURE BOX -->
+						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="500">
+							<div class="features-box">
+								<!-- Feature Icon -->
+								<div class="icon-box img-circle">
+									<i class="fa fa-bars"></i>
+								</div>
+								<!-- Feature Box Text -->
+								<div class="features-text">
+								    <h4 translate="functions.f3_title">Захист персональних даних</h4>
+									<p translate="functions.f3">Конфіденційна інформація та персональні дані заявника доступні для перегляду лише авторизованому персоналу.</p>
+								</div>
+							</div>
+						</div>	<!-- END FEATURE BOX -->
+
+						<!-- FEATURE BOX -->
+						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="500">
+							<div class="features-box">
+								<!-- Feature Icon -->
+								<div class="icon-box img-circle">
+									<i class="fa fa-trophy"></i>
+								</div>
+								<!-- Feature Box Text -->
+								<div class="features-text">
+									<h4 translate="functions.f4_title">Перегляд протоколу обробки звернення</h4>
+									<p translate="functions.f4">Для Вас та уповноваженого персоналу доступний перегляд протоколу обробки звернення зі всіма етапами виконання заявки.</p>
+								</div>
+							</div>
+						</div>	<!-- END FEATURE BOX -->
+					</div>	<!-- End row -->
+
+					<div class="row">
+						<!-- FEATURE BOX -->
+						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="700">
+							<div class="features-box">
+								<!-- Feature Icon -->
+								<div class="icon-box img-circle">
+									<i class="fa fa-wrench"></i>
+								</div>
+								<!-- Feature Box Text -->
+								<div class="features-text">
+									<h4 translate="functions.f5_title">Інформування про хід виконання заявки</h4>
+									<p translate="functions.f5">Про хід виконання Вашої заявки Система буде інформувати Вас по електронній пошті та СМС.</p>
+								</div>
+							</div>
+						</div>	<!-- END FEATURE BOX -->
+
+						<!-- FEATURE BOX -->
+						<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="700">
+							<div class="features-box">
+								<!-- Feature Icon -->
+								<div class="icon-box">
+									<i class="fa fa-life-ring"></i>
+								</div>
+								<!-- Feature Box Text -->
+								<div class="features-text">
+									<h4 translate="functions.f6_title">Пошук заявок</h4>
+									<p translate="functions.f6">Для диспетчерв створена можливість пошуку та фільтрації заявок за будь-якими параметрами, що дозволить швидко та якісно Вас обслужити.</p>
+								</div>
+							</div>
+						</div>	<!-- END FEATURE BOX -->
+					</div>	<!-- End row -->
+				</div><!-- End container -->
+			</section>	<!-- END FUNCTIONS -->
+
+			<!-- HISTORY
+			============================================= -->	
+			<section id="history">
+				<div class="container">
+					<!-- SECTION TITLE -->		
+					<div class="row">
+						<div class="col-sm-12 titlebar">
+							<h2 translate="stageImplementation.big_title">Етапи виконання заявки</h2>
+						</div>
+					</div>
+					<!-- HISTORY TIMELINE HOLDER -->
+					<div class="row">					
+						<div class="col-md-12">
+							<!-- TIMELINE -->
+							<div class="timeline">
+								<!-- TIMELINE YEAR -->
+								<div class="timeline-year first text-center">
+									<span class="stage_work" translate="stageImplementation.stage1">У Вас виникла проблема</span>
+								</div>
+								<!-- TIMELINE ITEM -->
+								<div class="timeline-item">
+									<div class="col-xs-12 col-md-5 pull-left timeline-item-content animated" data-animation="fadeInLeft" data-animation-delay="400">
+										<!-- History Date  -->
+										<div class="timeline-item-title clearfix">
+											<h4 translate="stageImplementation.stage1_title">Ви подєте заявку</h4>
+										</div>
+										<!-- History Date Text  -->
+										<div class="timeline-item-text">
+											<p translate="stageImplementation.stage1_text">Ви повідомляєте свої контактні дані та описуєте суть звого звернення, прикладаєте фотознімки, за потреби</p>
+										</div>
+										
+									</div>
+								</div>	<!-- END HISTORY DATE  -->
+								<!-- TIMELINE YEAR -->
+								<div class="timeline-year text-center animated" data-animation="bounceIn" data-animation-delay="400">
+									<span class="stage_work" translate="stageImplementation.stage2">Заявку отримує диспетчер</span>
+								</div>
+								<!-- TIMELINE ITEM -->
+								<div class="timeline-item">
+									<div class="col-xs-12 col-md-5 pull-right timeline-item-content animated" data-animation="fadeInRight" data-animation-delay="500">
+										<!-- History Date  -->
+										<div class="timeline-item-title clearfix">
+											<h4 translate="stageImplementation.stage2_title">Дитпетчер призначає виконавця</h4>
+										</div>
+										<!-- History Date Text  -->
+										<div class="timeline-item-text">
+											<p translate="stageImplementation.stage2_text">Диспетчер аналізує Вашу заяву, визначає одне або кілька підприємств які відповідатимуть за її викоанння та напраляє заявку робітнику або бригаді робітників</p>
+										</div>
+									</div>
+								</div>	<!-- END HISTORY DATE  -->
+								<!-- TIMELINE YEAR -->
+								<div class="timeline-year text-center animated" data-animation="bounceIn" data-animation-delay="550">
+									<span class="stage_work" translate="stageImplementation.stage3">Виконання заявки</span>
+								</div>
+								<!-- TIMELINE ITEM -->
+								<div class="timeline-item">
+									<div class="col-xs-12 col-md-5 pull-left timeline-item-content animated" data-animation="fadeInLeft" data-animation-delay="600">
+										<!-- History Date  -->
+										<div class="timeline-item-title clearfix">
+											<h4 translate="stageImplementation.stage3_title">Виконавець проводить необхідні роботи</h4>
+										</div>
+										<!-- History Date Text  -->
+										<div class="timeline-item-text">
+											<p translate="stageImplementation.stage3_text">Бригада робітників направляється до місця проведення робіт, а у разі не термінової заявки, заявка заносится до оперативного плану</p>
+										</div>
+									</div>
+								</div>	<!-- END HISTORY DATE  -->
+
+								<!-- TIMELINE YEAR -->
+								<div class="timeline-year text-center animated" data-animation="bounceIn" data-animation-delay="650">
+									<span class="stage_work" translate="stageImplementation.stage4">Перевірка якості</span>
+								</div>
+								<!-- TIMELINE ITEM -->
+								<div class="timeline-item">
+									<div class="col-xs-12 col-md-5 pull-right timeline-item-content animated" data-animation="fadeInRight" data-animation-delay="700">
+										<!-- History Date  -->
+										<div class="timeline-item-title clearfix">
+											<h4 translate="stageImplementation.stage4_title">Система повідомляє контролера</h4>
+										</div>
+										<!-- History Date Text  -->
+										<div class="timeline-item-text">
+											<p translate="stageImplementation.stage4_text">Контролер якості телефонує Вам ябо виїзджає на місце для оцінки якості проведених робіт. У разі незадовільної якості робіт, заявка направляється на повторне виконання</p>
+										</div>
+									</div>
+								</div>	<!-- END HISTORY DATE  -->
+								<!-- TIMELINE YEAR -->
+								<div class="timeline-year last text-center animated" data-animation="bounceIn" data-animation-delay="750">
+									<span class="stage_work" translate="stageImplementation.stage5">Проблему вирішено</span>
+								</div>
+							</div>	<!-- END TIMELINE -->
+						</div>
+					</div>	<!-- END HISTORY TIMELINE HOLDER -->
+				</div>	  <!-- End container -->			
+			</section>	<!-- END HISTORY -->
+
+			<!-- PROMO LINE 
+			============================================= -->	
+			<div id="promo_line" name="promo_line" align="center">
+				<div class="container">
+					<div class="row">
+						<!-- PROMO LINE CONTENT -->
+						<div class="col-md-12">
+							<h2 translate="map.big_title">Міста, в яких працює система</h2>
+							<p translate="map.text">Для подачі заявки, оберіть місто...</p>
+							<h2><a  href="http://melitop.cityonline.com.ua/uk/map/add" class="map_unavailable_city" translate="map.melitopol">Мелітополь</a></h2>
+							<h2><a  href="http://dnepr.cityonline.com.ua/uk/map/add" class="map_unavailable_city"translate="map.dnipropetrovsk">Дніпропетровськ</a></h2>
+							<h2><a href="http://cherngv.cityonline.com.ua/uk/map/add" class="map_unavailable_city" translate="map.chernigiv">Чернігів</a></h2>
+							<h2><a  href="http://chrvongrd.cityonline.com.ua/uk/map/add" class="map_unavailable_city" translate="map.chervonograd">Червоноград</a></h2>
+							<h2><a  href="http://bilcerk.cityonline.com.ua/uk/map/add" class="map_unavailable_city" translate="map.bila_cerkva">Біла Церква</a></h2>
+
+					</div>	 <!-- End row -->
+				</div>	  <!-- End container -->
+				<div id="map" class="map container">
+				<div class="map_wrapper">
+					<canvas id='canvas'></canvas>
+					<div class="abs">
+						<div id="citiesLinks" class="mapup rel">
+							<a id="melitop" href="http://melitop.cityonline.com.ua/uk/map/add" class="point abs"><span class="fleft">&nbsp;</span><strong class="fleft abs nowrap" translate="map.melitopol">Мелітополь</strong></a>
+							<a id="dnepr" href="http://dnepr.cityonline.com.ua/uk/map/add" class="point abs"><span class="fleft">&nbsp;</span><strong class="fleft abs nowrap" translate="map.dnipropetrovsk">Дніпропетровськ</strong></a>
+							<a id="cherngv" href="http://cherngv.cityonline.com.ua/uk/map/add" class="point abs"><span class="fleft">&nbsp;</span><strong class="fleft abs nowrap" translate="map.chernigiv">Чернігів</strong></a>
+							<a id="chrvongrd" href="http://chrvongrd.cityonline.com.ua/uk/map/add" class="point abs"><span class="fleft">&nbsp;</span><strong class="fleft abs nowrap" translate="map.chervonograd">Червоноград</strong></a>
+							<a id="bilcerk" href="http://bilcerk.cityonline.com.ua/uk/map/add" class="point abs"><span class="fleft">&nbsp;</span><strong class="fleft abs nowrap" translate="map.bila_cerkva">Біла Церква</strong></a>
+						</div>
+					</div>
+
+					<div class="margin: 0 auto">
+						<IMG SRC="img/map.png" ismap usemap="#map" id="map_img" class="mapper noborder iopacity100 icolor3074B9 vtop">
+					</div>
+				</div>
+				</div>
+				<!-- end map  -->
+			</div>	    <!-- END PROMO LINE -->
+
+			<!-- FOOTER
+			============================================= -->
+			<footer id="footer">
+				<div class="container">
+				
+				
+					<!-- FOOTER COPYRIGHT -->
+					<div class="row">						
+						<div id="footer_copyright" class="col-sm-12 text-center">		
+							<p>© <span translate="company_name">СОФТПРОЕКТ</span>, <text translate="copyright">2012-2015. Усі права захищено.</text></p>
+						</div>
+					</div>
+					
+					
+					<!-- FOOTER SOCIALS -->
+					<div class="row">
+					
+						<div id="footer_socials" class="col-sm-12 text-center">	
+							
+<!--							<div id="contact_icons">
+								<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>
+							</div>-->
+
+						</div>	
+						
+					</div>	<!-- END FOOTER SOCIALS -->
+
+						
+				</div>	  <!-- End container -->							
+			</footer>	<!-- END FOOTER -->	
+		
+		
+		
+		</div>	<!-- END CONTENT WRAPPER -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Замовлення презентації</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="f_name" translate="modal_filing_application.field_name">Ім'я</label>
+								<input class="form-control" type="text" id="f_name" name="f_name">
+							</div>
+							<div class="form-group">
+								<label for="f_pname" translate="modal_filing_application.field_company_name">Назва підприємства</label>
+								<input class="form-control" type="text" id="f_pname" name="f_pname">
+							</div>
+							<div class="form-group">
+								<label for="f_phone" translate="modal_filing_application.field_phone">Телефон</label>
+								<input class="form-control" type="text" id="f_phone" name="f_phone">
+							</div>
+							<div class="form-group">
+								<label for="f_email" translate="modal_filing_application.field_email">Електронна адресса</label>
+								<input class="form-control" type="email" id="f_email" name="f_email">
+							</div>
+							<div class="form-group">
+								<label for="f_note" translate="modal_filing_application.field_note">Прмітка</label>
+								<textarea class="form-control" id="f_note" name="f_note"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" translate="modal_filing_application.button_close">Закрити</button>
+						<button type="button" class="btn btn-primary" translate="modal_filing_application.button_submit">Замовити презентацію</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->		
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>	
+		<script src="js/modernizr.custom.js" type="text/javascript"></script>
+		<script src="js/jquery.easing.js" type="text/javascript"></script>
+		<script src="js/retina.js" type="text/javascript"></script>	
+		<script src="js/jquery.stellar.min.js" type="text/javascript"></script>	
+		<script defer src="js/jquery.flexslider.js" type="text/javascript"></script>
+		<script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+		<script defer src="js/count-to.js"></script>
+		<script defer src="js/jquery.appear.js"></script>
+		<script src="js/jquery.mixitup.js" type="text/javascript"></script>
+		<script src="js/owl.carousel.js" type="text/javascript"></script>
+		<script src="js/jquery.easypiechart.min.js"></script>
+		<script defer src="js/jquery.validate.min.js" type="text/javascript"></script>	
+		<script src="js/waypoints.min.js" type="text/javascript"></script>	
+		<script src="js/custom.js" type="text/javascript"></script>
+		<script src="js/map.js" type="text/javascript"></script>
+
+		<script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+		<script src="bower_components/ngstorage/ngStorage.min.js" type="text/javascript"></script>
+		<script src="app/app.js" type="text/javascript"></script>
+		<script src="app/controller.js" type="text/javascript"></script>
+		<script src="app/service.js" type="text/javascript"></script>
+		<script src="app/directive.js" type="text/javascript"></script>
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/changer.js" type="text/javascript" ></script>
+	</body>
+	
+</html>

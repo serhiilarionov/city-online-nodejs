@@ -1,0 +1,13 @@
+{
+  "name": "firebird-test",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "ngstorage": "~0.3.7"
+  }
+}

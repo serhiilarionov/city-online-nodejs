@@ -1,0 +1,22 @@
+@elements-main-color: #6eb05a;
+@titles-fonts: 'Arimo', sans-serif;
+@timeline-border: 1px solid #262626;
+@timeline-background-color: #262626;
+@title-nav-color: #222;
+@timeline-item-content: #f5f5f5;
+//Примеси
+
+.transition (@property, @duration, @timing-function:ease-in-out) {
+  -webkit-transition: @property @duration @timing-function;
+  -moz-transition: @property @duration @timing-function;
+  -o-transition: @property @duration @timing-function;
+  -ms-transition: @property @duration @timing-function;
+  transition: @property @duration @timing-function;
+}
+
+.text-params (@font-size, @font-weight: 400, @text-transform: inherit, @line-height: 1) {
+  font-size: @font-size;
+  font-weight: @font-weight;
+  text-transform: @text-transform;
+  line-height: @line-height;
+}
